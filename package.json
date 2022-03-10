@@ -12,6 +12,7 @@
     "node": ">=10"
   },
   "scripts": {
+    "cli": "node localize-cli.mjs",
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
@@ -59,5 +60,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "node-fetch": "^3.2.2"
+  }
 }
